@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985181089598",
+    "project_id": "mercari-519a9",
+    "storage_bucket": "mercari-519a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985181089598:android:a431bb0cf58ef98b72866f",
+        "android_client_info": {
+          "package_name": "com.arpit.mercari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985181089598-h0n22e5remhr0898n2nkp3prvplm4q4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arpit.mercari",
+            "certificate_hash": "344bff236a94b4ac3acf386b2c8a1059e683cb23"
+          }
+        },
+        {
+          "client_id": "985181089598-a5l0gbemtijlgs35a4sth0iplqkc654i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCODEewutfELByKnoXvCE66Lu4KAkipna0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985181089598-a5l0gbemtijlgs35a4sth0iplqkc654i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

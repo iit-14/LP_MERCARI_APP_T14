@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml">
+    <fragment
+        android:id="@+id/preLoginFragment"
+        android:name="com.arpit.mercari.login.PreLoginFragment"
+        android:label="PreLoginFragment" >
+        <action
+            android:id="@+id/action_preLoginFragment_to_patientSignUpFragment"
+            app:destination="@id/patientSignUpFragment" />
+        <action
+            android:id="@+id/action_preLoginFragment_to_doctorSignUpFragment"
+            app:destination="@id/doctorSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientSignUpFragment"
+        android:name="com.arpit.mercari.login.PatientSignUpFragment"
+        android:label="PatientSignUpFragment" >
+        <action
+            android:id="@+id/action_patientSignUpFragment_to_patientLoginFragment"
+            app:destination="@id/patientLoginFragment"
+            app:popUpTo="@id/preLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorSignUpFragment"
+        android:name="com.arpit.mercari.login.DoctorSignUpFragment"
+        android:label="DoctorSignUpFragment" >
+        <action
+            android:id="@+id/action_doctorSignUpFragment_to_doctorLoginFragment"
+            app:destination="@id/doctorLoginFragment"
+            app:popUpTo="@id/preLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientLoginFragment"
+        android:name="com.arpit.mercari.login.PatientLoginFragment"
+        android:label="PatientLoginFragment" >
+        <action
+            android:id="@+id/action_patientLoginFragment_to_patientSignUpFragment"
+            app:destination="@id/patientSignUpFragment"
+            app:popUpTo="@id/preLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorLoginFragment"
+        android:name="com.arpit.mercari.login.DoctorLoginFragment"
+        android:label="DoctorLoginFragment" >
+        <action
+            android:id="@+id/action_doctorLoginFragment_to_doctorSignUpFragment"
+            app:destination="@id/doctorSignUpFragment"
+            app:popUpTo="@id/preLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/slotFragment"
+        android:name="com.arpit.mercari.SlotFragment"
+        android:label="fragment_slot"
+        tools:layout="@layout/fragment_slot" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arpit.mercari.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_preLoginFragment"
+            app:destination="@id/preLoginFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hospitalListFragment"
+            app:destination="@id/hospitalListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_referralFragment"
+            app:destination="@id/referralFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_doctorsListFragment"
+            app:destination="@id/doctorsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.arpit.mercari.AppointmentFragment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_slotFragment2"
+            app:destination="@id/slotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsListFragment"
+        android:name="com.arpit.mercari.DoctorsListFragment"
+        android:label="fragment_doctors_list"
+        tools:layout="@layout/fragment_doctors_list" />
+    <fragment
+        android:id="@+id/hospitalListFragment"
+        android:name="com.arpit.mercari.HospitalListFragment"
+        android:label="fragment_hospital_list"
+        tools:layout="@layout/fragment_hospital_list" />
+    <fragment
+        android:id="@+id/referralFragment"
+        android:name="com.arpit.mercari.ReferralFragment"
+        android:label="fragment_referral"
+        tools:layout="@layout/fragment_referral" />
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" />
+</navigation>
